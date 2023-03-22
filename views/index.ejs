@@ -94,18 +94,18 @@
     <section id="available-stekjes">
 
         <% stekjes.forEach(stekje => { %>
-        <div class="flex-wrapper-cards">
-            <div class="flex-wrapper-stekjes">
+            <div class="flex-wrapper-cards">
+                <div class="flex-wrapper-stekjes">
                     <img src="<%= stekje.fotos[0].original %>" width="<%= stekje.fotos[0].width %>"
                          height="<%= stekje.fotos[0].height %>">
-                <h4> <%= stekje.naam %> </h4>
+                    <h4> <%= stekje.naam %> </h4>
+                </div>
             </div>
-        </div>
-            <% }) %>
+        <% }) %>
     </section>
 
 
-<!--       SECTION 5 CONTACT-->
+    <!--       SECTION 5 CONTACT-->
     <section id="contact">
 
         <form action="/new" method="post">
@@ -121,29 +121,27 @@
                         <option value=><%= stekje.naam %></option>
                     <% }); %>
                 </select>
-
-                <label for="swap">Welke stekje ruil je om?:</label>
-                <input type="text" name="swap" id="swap" placeholder="..." value="" />
-
-                <label for="first-name">Voornaam:</label>
-                <input type="text" name="first-name" id="first-name" placeholder="..." value="" />
-
-                <label for="sur-name">Achternaam:</label>
-                <input type="text" name="sur-name" id="sur-name" placeholder="..." value="" />
-
-                <label for="number">Telefoon nummer:</label>
-                <input type="tel" name="number" id="number" placeholder="..." pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" value="" />
-
-                <label for="email">E-mail:</label>
-                <input type="text" name="email" id="email" placeholder="..." value="" />
-
-                <label for="pick-up">Wanneer ophalen:</label>
-                <input type="date" name="pick-up" id="pick-up" placeholder="..." value="" />
-
-
-                <input type="submit" value="Reserveer je stekje!" />
             </fieldset>
 
+            <fieldset>
+                <legend>Voeg een stekje toe!</legend>
+
+                <label for="aanmeld-datum">aanmeld datum:</label>
+                <input type="date" name="aanmeld-datum" id="aanmeld-datum" placeholder="..." value=""/>
+
+                <label for="giftig">giftig:</label>
+                <input type="text" name="giftig" id="giftig" placeholder="..." value=""/>
+
+                <label for="land-herkomst">Land van herkomst:</label>
+                <input type="text" name="land-herkomst" id="land-herkomst" placeholder="..." value=""/>
+
+                <label for="naam">Naam:</label>
+                <input type="text" name="naam" id="naam" placeholder="..." value=""/>
+
+
+
+                <input type="submit" value="Reserveer je stekje!"/>
+            </fieldset>
 
 
         </form>
@@ -170,9 +168,6 @@
     <!--            </div>-->
     <!--        </div>-->
     <!--    </section>-->
-
-
-
 
 
     <%- include('./partials/foot') %>
