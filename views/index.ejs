@@ -107,7 +107,46 @@
 
 <!--       SECTION 5 CONTACT-->
     <section id="contact">
-        <p>i'm content</p>
+
+        <form action="/new" method="post">
+            <% if(locals.error !== undefined){ %>
+                <p class="message"><%= error %></p>
+            <% } %>
+            <fieldset>
+                <legend>Swap nu je stekje!</legend>
+
+                <label for="stekjes">Selecteer je stekje</label>
+                <select id="dropdown" name="dropdown">
+                    <% stekjes.forEach(stekje => { %>
+                        <option value=><%= stekje.naam %></option>
+                    <% }); %>
+                </select>
+
+                <label for="swap">Welke stekje ruil je om?:</label>
+                <input type="text" name="swap" id="swap" placeholder="..." value="" />
+
+                <label for="first-name">Voornaam:</label>
+                <input type="text" name="first-name" id="first-name" placeholder="..." value="" />
+
+                <label for="sur-name">Achternaam:</label>
+                <input type="text" name="sur-name" id="sur-name" placeholder="..." value="" />
+
+                <label for="number">Telefoon nummer:</label>
+                <input type="tel" name="number" id="number" placeholder="..." pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" value="" />
+
+                <label for="email">E-mail:</label>
+                <input type="text" name="email" id="email" placeholder="..." value="" />
+
+                <label for="pick-up">Wanneer ophalen:</label>
+                <input type="date" name="pick-up" id="pick-up" placeholder="..." value="" />
+
+
+                <input type="submit" value="Reserveer je stekje!" />
+            </fieldset>
+
+
+
+        </form>
     </section>
 
     <!--   SECTION 1 KIJK LIVE MEE -->
@@ -132,114 +171,8 @@
     <!--        </div>-->
     <!--    </section>-->
 
-    <!--    <section class="page-section" id="section-2">-->
-    <!--        <h2>Hoe werkt het?</h2>-->
-    <!--        <div class="carousel-wrapper">-->
-    <!--            <span id="item-1"></span>-->
-    <!--            <span id="item-2"></span>-->
-    <!--            <span id="item-3"></span>-->
 
 
-    <!--            <div class="carousel-item item-1">-->
-    <!--                <div class="flex-container-car-1">-->
-    <!--                    <a href="#item-3" class="arrow-prev arrow"></a>-->
-    <!--                    <a href="#item-2" class="arrow-next arrow"></a>-->
-    <!--                    <div>-->
-    <!--                        <img src="assets/carousel/plant-image-carousel.png">-->
-    <!--                    </div>-->
-    <!--                    <div>-->
-    <!--                        <p>Kies een stekje uit de stekjeskast, en reserveer deze online via de website.</p>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--            </div>-->
-
-    <!--            <div class="carousel-item item-2">-->
-    <!--                <div class="flex-container-car-2">-->
-    <!--                    <a href="#item-1" class="arrow-prev arrow"></a>-->
-    <!--                    <a href="#item-3" class="arrow-next arrow"></a>-->
-    <!--                    <div>-->
-    <!--                        <img src="assets/carousel/trade-image-carousel.png">-->
-    <!--                    </div>-->
-    <!--                    <div>-->
-    <!--                        <p>Neem een ander stekje mee, en ruil deze om bij de Buurtcampus Oost.</p>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--            </div>-->
-
-    <!--            <div class="carousel-item item-3">-->
-    <!--                <div class="flex-container-car-3">-->
-    <!--                    <a href="#item-2" class="arrow-prev arrow"></a>-->
-    <!--                    <a href="#item-1" class="arrow-next arrow"></a>-->
-    <!--                    <div>-->
-    <!--                        <img src="assets/carousel/jeej-image-carousel.png">-->
-    <!--                    </div>-->
-    <!--                    <div>-->
-    <!--                        <p>Jeej! Bij deze heb je bijgedragen aan het tegen gaan van verspilling van planten.</p>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--            </div>-->
-
-    <!--        </div>-->
-    <!--    </section>-->
-
-
-    <!--   SECTION 3 VISIE -->
-    <!--     VOORKANT VISIE KAARTEN -->
-    <!--    <section class="section-vision">-->
-    <!--        <div class="flex-container-vision">-->
-
-    <!--            <div class="flip-card">-->
-    <!--                <div class="flip-card-inner">-->
-    <!--                    <div class="flip-card-front">-->
-    <!--                        <div>-->
-    <!--                            <img src="assets/vision/heartbeat.png">-->
-    <!--                        </div>-->
-    <!--                        <div>-->
-    <!--                            <p>Vitaliteit</p>-->
-    <!--                        </div>-->
-    <!--                    </div>-->
-    <!--                    <div class="flip-card-back">-->
-    <!--                        <p>De studenten van Buurtcampus Oost werken samen met bewoners en organisaties uit de buurt aan-->
-    <!--                            het realiseren van de klimaatambities van Amsterdam samen met de buurtbewoners.</p>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--            </div>-->
-
-    <!--            <div class="flip-card">-->
-    <!--                <div class="flip-card-inner">-->
-    <!--                    <div class="flip-card-front">-->
-    <!--                        <div>-->
-    <!--                            <img src="assets/vision/support.png">-->
-    <!--                        </div>-->
-    <!--                        <div>-->
-    <!--                            <p>Samenwerken</p>-->
-    <!--                        </div>-->
-    <!--                    </div>-->
-    <!--                    <div class="flip-card-back">-->
-    <!--                        <p>De studenten van Buurtcampus Oost werken samen met bewoners en organisaties uit de buurt aan-->
-    <!--                            het realiseren van de klimaatambities van Amsterdam samen met de buurtbewoners.</p>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--            </div>-->
-
-    <!--            <div class="flip-card">-->
-    <!--                <div class="flip-card-inner">-->
-    <!--                    <div class="flip-card-front">-->
-    <!--                        <div>-->
-    <!--                            <img src="assets/vision/planet-earth.png">-->
-    <!--                        </div>-->
-    <!--                        <div>-->
-    <!--                            <p>Duurzaamheid</p>-->
-    <!--                        </div>-->
-    <!--                    </div>-->
-    <!--                    <div class="flip-card-back">-->
-    <!--                        <p>De studenten van Buurtcampus Oost werken samen met bewoners en organisaties uit de buurt aan-->
-    <!--                            het realiseren van de klimaatambities van Amsterdam samen met de buurtbewoners.</p>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </section>-->
 
 
     <%- include('./partials/foot') %>

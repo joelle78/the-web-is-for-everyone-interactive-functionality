@@ -16,16 +16,13 @@
 ## Beschrijving
 
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-De sprint staat in thema van server side rendering. Hierin leren we hoe je op de server webpagina's kunt maken met
-content uit een database. De opdracht die we maken is weer voor een opdrachtgever. Ik heb gekozen om bij mij oude
-opdrachtgever te blijven: Buurtcampus Oost.
+
 
 <!-- Voeg een mooie poster visual toe 📸 -->
-![alt text](public/assets/poster.png)
-![alt text](public/assets/poster-2.png)
+
 
 <!-- Voeg een link toe naar Github Pages 🌐-->
-[Link naar mijn Github page ](https://github.com/joelle78/server-side-rendering)
+[Link naar mijn Github page ](https://github.com/joelle78/the-web-is-for-everyone-interactive-functionality)
 
 ## Kenmerken
 
@@ -36,6 +33,8 @@ gemaakt van Node om server-side te kunnen programmeren. Met de templating taal E
 JavaScript. Dit zorgt er ook voor dat je in je partials maar een keer code hoeft te schrijven maar zich kan herhalen op
 je gehele website. Ook heb ik weer gebruik gemaakt van JSON. Daarnaast heb ik er voor gekozen om de mappen structuren
 zelf te installeren in plaats van mij oude project te kopiëren. Dit heb ik gedaan met Express en de $ npm init command.
+
+Wat is progressive enhancement: 
 
 ## Installatie
 Om mijn website te publiceren heb ik gebruik gemaakt van cyclic.sh als hostingpartij.
