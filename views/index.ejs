@@ -96,8 +96,17 @@
         <% stekjes.forEach(stekje => { %>
             <div class="flex-wrapper-cards">
                 <div class="flex-wrapper-stekjes">
-                    <img src="<%= stekje.fotos[0].original %>" width="<%= stekje.fotos[0].width %>"
-                         height="<%= stekje.fotos[0].height %>">
+
+
+
+
+                    <% if (stekje.fotos[0]) { %>
+                        <img src="<% stekje.fotos[0].original %>" width="<% stekje.fotos[0].width %>" height="<% stekje.fotos[0].height %>">
+                    <% }else{ %>
+                        <img src="/assets/default-stekje.jpg">
+                    <% } %>
+
+
                     <h4> <%= stekje.naam %> </h4>
                 </div>
             </div>
@@ -121,26 +130,6 @@
                         <option value=><%= stekje.naam %></option>
                     <% }); %>
                 </select>
-            </fieldset>
-
-            <fieldset>
-                <legend>Voeg een stekje toe!</legend>
-
-                <label for="aanmeld-datum">aanmeld datum:</label>
-                <input type="date" name="aanmeld-datum" id="aanmeld-datum" placeholder="..." value=""/>
-
-                <label for="giftig">giftig:</label>
-                <input type="text" name="giftig" id="giftig" placeholder="..." value=""/>
-
-                <label for="land-herkomst">Land van herkomst:</label>
-                <input type="text" name="land-herkomst" id="land-herkomst" placeholder="..." value=""/>
-
-                <label for="naam">Naam:</label>
-                <input type="text" name="naam" id="naam" placeholder="..." value=""/>
-
-
-
-                <input type="submit" value="Reserveer je stekje!"/>
             </fieldset>
 
 
