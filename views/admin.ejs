@@ -10,13 +10,17 @@
 
 <%- include('./partials/head.ejs') %>
 
-<fieldset>
+
+<section id="section-admin-form">
+
     <form class="upload-plant-form" action="/new" method="post">
         <h2>Nieuw stekje uploaden:</h2>
 
+        <div class="flex-wrapper-admin-form">
+
         <div>
-            <label for="naam-stekje">Naam van stekje:</label>
-            <input type="text" name="naam-stekje" id="naam-stekje" placeholder="..." value="<% locals.naam ?? '' %>" />
+            <label for="naam">Naam van stekje:</label>
+            <input type="text" name="naam" id="naam" placeholder="..." value="<% locals.naam ?? '' %>" />
         </div>
 
         <div>
@@ -44,13 +48,23 @@
             <input type="file" name="upload-image" id="upload-image" value="<% locals.fotos ?? '' %>" />
         </div>
 
-        <div>
-            <label for="description-plant">Beschrijving van het stekje:</label>
-            <textarea input type="text" name="description-plant" rows="2" cols="50"><%= locals.beschrijving ?? '' %></textarea>
+            <div>
+                <label for="description-plant">Beschrijving van het stekje:</label>
+                <input type="text" name="description-plant" placeholder="..." value=" <%= locals.beschrijving ?? '' %> " />
+            </div>
+
+
+            <button>Opslaan</button>
+
+
+
         </div>
-        <input type="submit" value="Opslaan" />
     </form>
-</fieldset>
+
+</section>
+
+
+
 <%- include('./partials/foot.ejs') %>
 
 

@@ -17,7 +17,7 @@ server.use(express.urlencoded({extended: true}))
 // Maak een route voor de index
 server.get('/', async function (req, res) {
 
-    const baseurl = "https://api.buurtcampus-oost.fdnd.nl/api/v1"
+    const baseUrl = "https://api.buurtcampus-oost.fdnd.nl/api/v1"
     const url = ('https://api.buurtcampus-oost.fdnd.nl/api/v1/stekjes')
     const data = await fetch(url).then((response) => response.json())
     res.render('index', data)

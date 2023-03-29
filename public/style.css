@@ -415,12 +415,42 @@ flex-container-footer img {
     }
 }
 
+/* ------------ ADMIN PAGE ------------ */
+#section-admin-form{
+    background-color: var(--white);
+}
 
+.upload-plant-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    padding-bottom: 5rem;
+}
 
+.flex-wrapper-admin-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 3rem;
+    padding-top: 5rem;
+    padding-bottom:5rem;
+    outline: 1px solid var(--orange);
+    background-color: var(--grey);
+    width: 50rem;
+}
 
+.upload-plant-form label {
+    display: block;
+    margin-bottom: 10px;
+}
 
-#contact{
-    height: 50rem;
+.upload-plant-form input {
+    text-align: left;
+    width: 20rem;
 }
 
 
