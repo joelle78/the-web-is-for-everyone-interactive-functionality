@@ -14,47 +14,47 @@
 <section id="section-admin-form">
 
     <form class="upload-plant-form" action="/new" method="post">
-        <h2>Nieuw stekje uploaden:</h2>
+        <h1>Nieuw stekje uploaden</h1>
 
         <div class="flex-wrapper-admin-form">
 
         <div>
             <label for="naam">Naam van stekje:</label>
-            <input type="text" name="naam" id="naam" placeholder="..." value="<% locals.naam ?? '' %>" />
+            <input type="text" name="naam" id="naam" placeholder="" value="<% locals.naam ?? '' %>" required/>
         </div>
 
         <div>
             <label for="landvanherkomst">Land van herkomst:</label>
-            <input type="text" name="landvanherkomst" id="landvanherkomst" placeholder="..." value="<% locals.landvanherkomst ?? '' %>" />
+            <input type="text" name="landvanherkomst" id="landvanherkomst" class="landvanherkomst" placeholder="" value="<% locals.landvanherkomst ?? '' %>" required/>
         </div>
 
         <div>
-            <label for="giftig">Giftig?:</label>
-            <input type="text" name="giftig" id="giftig" placeholder="..." value="<% locals.giftig ?? '' %>" />
+            <label for="giftig">Giftig:</label>
+            <input type="text" name="giftig" id="giftig" placeholder="" value="<% locals.giftig ?? '' %>" required />
         </div>
 
         <div>
-            <label for="verpotten">Verpotten?</label>
-            <input type="text" name="verpotten" id="verpotten" placeholder="..." value="<% locals.verpotten %>" />
+            <label for="verpotten">Verpotten:</label>
+            <input type="text" name="verpotten" id="verpotten" placeholder="" value="<% locals.verpotten %>" required />
         </div>
 
         <div>
-            <label for="voeding">Voeding?</label>
-            <input type="text" name="voeding" id="voeding" placeholder="..." value="<% locals.voeding %>" />
+            <label for="voeding">Voeding:</label>
+            <input type="text" name="voeding" id="voeding" placeholder="" value="<% locals.voeding %>" required />
         </div>
 
-        <div>
+        <div class="no-underline-img">
             <label for="upload-image">Upload een foto van het stekje</label>
             <input type="file" name="upload-image" id="upload-image" value="<% locals.fotos ?? '' %>" />
         </div>
 
             <div>
                 <label for="description-plant">Beschrijving van het stekje:</label>
-                <input type="text" name="description-plant" placeholder="..." value=" <%= locals.beschrijving ?? '' %> " />
+                <input type="text" name="description-plant" placeholder="" value=" <%= locals.beschrijving ?? '' %> " required/>
             </div>
 
 
-            <button>Opslaan</button>
+            <button class="button-opslaan">Opslaan</button>
 
 
 
@@ -67,6 +67,5 @@
 
 <%- include('./partials/foot.ejs') %>
 
-
 <!--LINK TO JS FILE -->
-<script src="/index.js"></script>
+<script src="/script.js"></script>

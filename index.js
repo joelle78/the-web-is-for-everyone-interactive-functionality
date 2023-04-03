@@ -28,7 +28,12 @@ server.get('/admin', (request, response) => {
     response.render('admin')
 })
 
-// De .get()-methode wordt gebruikt om een routeringspad te definiëren.
+// Route voor de workshops page
+server.get('/workshops', (request, response) => {
+    response.render('workshops')
+})
+
+// De .get()-methode wordt gebruikt om een route pad te definiëren.
 server.get('/:id', (request, response) => {
     // Het externe API-eindpunt is opgeslagen in de baseUrl-variabele, terwijl de id-parameter wordt opgehaald uit de URL van de client met behulp van request.params.id.
     const baseUrl = "https://api.buurtcampus-oost.fdnd.nl/api/v1"
@@ -44,6 +49,10 @@ server.get('/:id', (request, response) => {
 server.get('/new', (request, response) => {
     response.render('admin')
 })
+
+
+
+
 
 server.post('/new', (request, response) => {
     // Het samenvoegen van de juiste API-eindpunten in de url-variabele.

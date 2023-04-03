@@ -101,7 +101,7 @@
 
 
                     <% if (stekje.fotos[0]) { %>
-                        <img src="<% stekje.fotos[0].original %>" width="<% stekje.fotos[0].width %>" height="<% stekje.fotos[0].height %>">
+                        <img src="<%= stekje.fotos[0].original%>" width="<%= stekje.fotos[0].width%>" height="<%= stekje.fotos[0].height%>">
                     <% }else{ %>
                         <img src="/assets/default-stekje.jpg">
                     <% } %>
@@ -167,8 +167,7 @@
 <!--LINK TO JS FILE -->
 <script src="/script.js"></script>
 
-<!-- GSAP -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+
 
 
 <!--   TEST MET PAGE TRANSITION -->
