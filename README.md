@@ -60,13 +60,13 @@ Om mijn website te publiceren heb ik gebruik gemaakt van cyclic.sh als hostingpa
 
 ## Bronnen
 
-https://www.cyclic.sh/
-https://nodejs.org/en/
-https://api.buurtcampus-oost.fdnd.nl/api/v1/stekjes
-https://ejs.co/
-https://expressjs.com/
-https://www.json.org/json-en.html
-https://statics.teams.cdn.office.net/evergreen-assets/safelinks/1/atp-safelinks.html
+https://www.cyclic.sh/ <br>
+https://nodejs.org/en/ <br>
+https://api.buurtcampus-oost.fdnd.nl/api/v1/stekjes<br>
+https://ejs.co/ <br>
+https://expressjs.com/ <br>
+https://www.json.org/json-en.html <br>
+https://statics.teams.cdn.office.net/evergreen-assets/safelinks/1/atp-safelinks.html <br>
 
 ## Licentie
 
