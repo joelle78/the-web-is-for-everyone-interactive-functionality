@@ -16,10 +16,15 @@
 ## Beschrijving
 
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-
+PlantSwap is een initiatief van Buurtcampus Oost. Bij de buurtcampus is er een stekjes kast ontwikkeld. Hierbij kunnen
+belanghebbenden online een stekje reserveren en een ander stekje inruilen. Dit om verspilling tegen te gaan van planten
+en buurtbewoners bij elkaar te brengen. De beschikbare stekjes die te zien zijn op de website komen uit een API. Er is een admin page ontwikkeld waarbij er nieuwe
+stekjes geupload kunnen worden. 
 
 <!-- Voeg een mooie poster visual toe 📸 -->
-
+![Alt Text](public/assets/visual-1.png)
+![Alt Text](public/assets/visual-2.png)
+![Alt Text](public/assets/visual-3.png)
 
 <!-- Voeg een link toe naar Github Pages 🌐-->
 [Link naar mijn Github page ](https://github.com/joelle78/the-web-is-for-everyone-interactive-functionality)

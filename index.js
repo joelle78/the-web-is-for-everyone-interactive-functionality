@@ -19,6 +19,11 @@ server.get('/', async function (req, res) {
 
     const baseUrl = "https://api.buurtcampus-oost.fdnd.nl/api/v1"
     const url = ('https://api.buurtcampus-oost.fdnd.nl/api/v1/stekjes')
+
+    // Er wordt een fetch verzoek gestuurd naar de opgegeven url.
+    // Zodra er een respons is van de fetch wordt deze in JSON-formaat omgezet door de .json() methode te gebruiken.
+    // De resulterende JSON-gegevens worden opgeslagen in de variabele data met behulp van de const keyword.
+    // Vervolgens wordt de index pagina gerenderd met behulp van de res.render functie, waarbij de data variabele wordt doorgegeven als een parameter.
     const data = await fetch(url).then((response) => response.json())
     res.render('index', data)
 })
@@ -64,7 +69,7 @@ server.post('/new', (request, response) => {
         if (data.success) {
             response.redirect('/')
 
-        // Als het POST-verzoek niet succesvol was, wordt er een foutbericht gegenereerd met behulp van de inhoud van de respons.
+            // Als het POST-verzoek niet succesvol was, wordt er een foutbericht gegenereerd met behulp van de inhoud van de respons.
         } else {
             const errormessage = `${data.message}: Mogelijk komt dit door de slug die al bestaat.`
             // De newStekje variabele wordt gedefinieerd om een kopie van de gegevens van het POST-verzoek te bevatten, en deze variabele wordt gebruikt in de response.render()-functie om ervoor te zorgen dat de gebruiker zijn oorspronkelijke invoer kan zien nadat de foutmelding is weergegeven.
