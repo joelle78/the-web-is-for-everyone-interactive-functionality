@@ -59,7 +59,6 @@ Om mijn website te publiceren heb ik gebruik gemaakt van cyclic.sh als hostingpa
 ## Gebruik
 
 ## Bronnen
-
 https://www.cyclic.sh/ <br>
 https://nodejs.org/en/ <br>
 https://api.buurtcampus-oost.fdnd.nl/api/v1/stekjes<br>
@@ -69,5 +68,4 @@ https://www.json.org/json-en.html <br>
 https://statics.teams.cdn.office.net/evergreen-assets/safelinks/1/atp-safelinks.html <br>
 
 ## Licentie
-
 This project is licensed under the terms of the [MIT license](./LICENSE).

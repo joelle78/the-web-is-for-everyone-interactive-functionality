@@ -43,14 +43,14 @@
             <input type="text" name="voeding" id="voeding" placeholder="" value="<% locals.voeding %>" required />
         </div>
 
-        <div class="no-underline-img">
-            <label for="upload-image">Upload een foto van het stekje</label>
-            <input type="file" name="upload-image" id="upload-image" value="<% locals.fotos ?? '' %>" />
-        </div>
-
             <div>
                 <label for="description-plant">Beschrijving van het stekje:</label>
                 <input type="text" name="description-plant" placeholder="" value=" <%= locals.beschrijving ?? '' %> " required/>
+            </div>
+
+            <div>
+                <input type="file" name="file" id="file" class="inputfile" />
+                <label for="file">Choose a file</label>
             </div>
 
 

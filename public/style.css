@@ -473,11 +473,30 @@ flex-container-footer img {
     border-bottom-color: var(--orange);
 }
 
-.no-underline-img input {
-    border: none;
-    outline: none;
+/* UPLOAD IMG STEKJE*/
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
 }
 
+.inputfile + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    display: inline-block;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: red;
+}
+
+/* BUTTON STEKJE OPSLAAN*/
 .button-opslaan {
     background-color: var(--grey);
     border: 2px solid var(--purple-blue);
@@ -517,8 +536,7 @@ flex-container-footer img {
 }
 
 
-/* DIALOG */
-
+/* DIALOG UPLOADEN IS GELUKT*/
 .dialog-screen {
     position: fixed;
     top: 0;
