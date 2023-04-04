@@ -50,10 +50,6 @@ server.get('/new', (request, response) => {
     response.render('admin')
 })
 
-
-
-
-
 server.post('/new', (request, response) => {
     // Het samenvoegen van de juiste API-eindpunten in de url-variabele.
     const baseUrl = "https://api.buurtcampus-oost.fdnd.nl/api/v1"
