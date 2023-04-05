@@ -36,9 +36,7 @@ In deze leertaak hebben we weer gebruik gemaakt van een API. De API van Buurtcam
 is: [Link naar API Buurtcampus Oost ](https://api.buurtcampus-oost.fdnd.nl/api/v1/stekjes). Hierbij hebben we weer
 gebruik gemaakt van Node om server-side te kunnen programmeren. Met de templating taal EJS kan je de HTML-opmaak
 genereren met JavaScript. Dit zorgt er ook voor dat je in je partials maar een keer code hoeft te schrijven maar zich
-kan herhalen op je gehele website. Ook heb ik weer gebruik gemaakt van JSON. Daarnaast heb ik er voor gekozen om de
-mappen structuren zelf te installeren in plaats van mij oude project te kopiëren. Dit heb ik gedaan met Express en de $
-npm init command.
+kan herhalen op je gehele website. Ook heb ik weer gebruik gemaakt van JSON. 
 
 Om gebruikers van de website data te kunnen toevoegen aan de website is er gebruikt gemaakt van de methode progressive
 enhancement. Met progressive enhancement bouw je je website in 3 lagen:
@@ -53,9 +51,11 @@ functies toegevoegd voor gebruikers met meer geavanceerde apparaten of browsers,
 toegankelijk blijft voor alle gebruikers.
 
 ## Installatie
-
 Om mijn website te publiceren heb ik gebruik gemaakt van cyclic.sh als hostingpartij.
 
+Daarnaast heb ik er voor gekozen om de
+mappen structuren zelf te installeren in plaats van mij oude project te kopiëren. Dit heb ik gedaan met Express en de $
+npm init command.
 ## Gebruik
 
 ## Bronnen
